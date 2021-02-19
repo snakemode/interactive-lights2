@@ -10,7 +10,7 @@ import { PixelProtocolMessageHandler } from "./js/PixelProtocolMessageHandler";
 
     const ably = new Ably.Realtime.Promise({ authUrl: '/api/createTokenRequest' });
 
-    const channelName = "tshirt";
+    const channelName = "leds";
     const deviceDimensions = { width: 16, height: 16 };
 
     const ledDriver = new RemoteMatrixLedDriver({
