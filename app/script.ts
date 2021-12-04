@@ -1,4 +1,4 @@
-import Ably from "ably";
+import * as Ably from "ably";
 import { ClickableGrid } from "./js/ClickableGrid";
 import { ColorPallette } from "./js/ColorPallette";
 import { default as RemoteMatrixLedDriver, ArduinoDeviceAdapter, AblyTransport } from "@snakemode/matrix-driver";
@@ -8,6 +8,7 @@ import { PixelProtocolMessageHandler } from "./js/PixelProtocolMessageHandler";
 
     console.log("Oh hai! 🖤");
 
+    console.log("Ably", Ably);
     const ably = new Ably.Realtime.Promise({ authUrl: '/api/createTokenRequest' });
 
     const channelName = "leds";
