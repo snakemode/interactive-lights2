@@ -9,7 +9,7 @@
     "dev:api": "npm run start --prefix api",
     "dev:server": "npx vite serve",
     "build:azure": "npx vite build",
-    "build:netlify": "npx vite build && cd api && npm i && npm run build"
+    "build:netlify": "npx vite build"
   },
   "author": "",
   "license": "ISC",
